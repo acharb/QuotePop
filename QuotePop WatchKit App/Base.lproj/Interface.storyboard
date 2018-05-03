@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="QuotePop_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" alignment="center" verticalAlignment="center" text="Quote" textAlignment="left" numberOfLines="0" id="UC8-rY-pLT">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                        <label width="1" height="20" alignment="center" verticalAlignment="bottom" text="- Author" textAlignment="center" id="knz-wK-kIA">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                        </label>
+                        <button width="61" height="41" alignment="center" title="next" id="7tH-yI-qQD">
+                            <color key="backgroundColor" red="0.87131806883787244" green="0.73731357186455537" blue="0.10264837742464063" alpha="0.42248019366197181" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="nextButton" destination="AgC-eL-Hgc" id="x9m-Uq-O8T"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <menu key="menu" id="swM-xH-C6T">
+                        <items>
+                            <menuItem title="Relax" icon="accept" id="Saz-lZ-xK5">
+                                <connections>
+                                    <action selector="Relax" destination="AgC-eL-Hgc" id="TRf-9p-abH"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Motivate" icon="add" id="XR4-px-ar6">
+                                <connections>
+                                    <action selector="Motivate" destination="AgC-eL-Hgc" id="33J-9J-cXC"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Be Wise" icon="block" id="4yM-IN-Tm7">
+                                <connections>
+                                    <action selector="BeWise" destination="AgC-eL-Hgc" id="LQR-l4-pPf"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <color key="backgroundColor" red="0.52493901939999998" green="0.25803015800000001" blue="0.72986156079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="authorLabel" destination="knz-wK-kIA" id="wEY-L1-bbf"/>
+                        <outlet property="quoteLabel" destination="UC8-rY-pLT" id="5ho-gq-D7O"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="219.69230769230771" y="343.0512820512821"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="QuotePop_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>

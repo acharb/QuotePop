@@ -1,0 +1,735 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E12C67212060777300531324 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12C67202060777300531324 /* AppDelegate.swift */; };
+		E12C67262060777300531324 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12C67242060777300531324 /* Main.storyboard */; };
+		E12C67282060777300531324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E12C67272060777300531324 /* Assets.xcassets */; };
+		E12C672B2060777300531324 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12C67292060777300531324 /* LaunchScreen.storyboard */; };
+		E12C67302060777300531324 /* QuotePop WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E12C672F2060777300531324 /* QuotePop WatchKit App.app */; };
+		E12C67362060777400531324 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12C67342060777400531324 /* Interface.storyboard */; };
+		E12C67382060777400531324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E12C67372060777400531324 /* Assets.xcassets */; };
+		E12C673F2060777400531324 /* QuotePop WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E12C673E2060777400531324 /* QuotePop WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E12C67442060777400531324 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12C67432060777400531324 /* InterfaceController.swift */; };
+		E12C67462060777400531324 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12C67452060777400531324 /* ExtensionDelegate.swift */; };
+		E12C67482060777400531324 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12C67472060777400531324 /* NotificationController.swift */; };
+		E12C674A2060777400531324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E12C67492060777400531324 /* Assets.xcassets */; };
+		E12C675D206088A400531324 /* QuoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12C675C206088A400531324 /* QuoteModel.swift */; };
+		E12C67612061CC2300531324 /* QuotesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12C67602061CC2300531324 /* QuotesCollectionViewCell.swift */; };
+		E12C67632062D6E700531324 /* AddNewQuote_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12C67622062D6E700531324 /* AddNewQuote_ViewController.swift */; };
+		E12C67652065972100531324 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12C67642065972100531324 /* Connectivity.swift */; };
+		E12C6767206A702300531324 /* QuoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12C6766206A702300531324 /* QuoteModel.swift */; };
+		E1813F8D208B76D3004A365B /* QuoteModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1813F8B208B76D3004A365B /* QuoteModel.xcdatamodeld */; };
+		E1813F8F208B7CE3004A365B /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1813F8E208B7CE3004A365B /* Quote.swift */; };
+		E1813F91208B8CCE004A365B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1813F90208B8CCE004A365B /* Category.swift */; };
+		E188F1C4207C27410045D7DC /* Chewy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E188F1C3207C27410045D7DC /* Chewy-Regular.ttf */; };
+		E188F1C5207C27860045D7DC /* Chewy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E188F1C3207C27410045D7DC /* Chewy-Regular.ttf */; };
+		E188F1C7207C2BE70045D7DC /* Cloud-CollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E188F1C6207C2BE70045D7DC /* Cloud-CollectionViewLayout.swift */; };
+		E18BDC2E208D61E800A97876 /* ViewQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18BDC2D208D61E800A97876 /* ViewQuoteViewController.swift */; };
+		E18EF939207D7DB5005D2438 /* ViewController-CloudCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18EF938207D7DB5005D2438 /* ViewController-CloudCollection.swift */; };
+		E1AEF6B32093CD58007BAF85 /* Color-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AEF6B22093CD58007BAF85 /* Color-Extension.swift */; };
+		E1AEF6DC20942B49007BAF85 /* GlassesHead-ViewController-Programmatically.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AEF6DB20942B49007BAF85 /* GlassesHead-ViewController-Programmatically.swift */; };
+		E1B2174C20843AE700B3FD30 /* CategoriesViewController-Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B2174B20843AE700B3FD30 /* CategoriesViewController-Table.swift */; };
+		E1B2174E20843DA200B3FD30 /* CloudTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B2174D20843DA200B3FD30 /* CloudTableViewCell.swift */; };
+		E1F7ADE32097EC290003C554 /* GlassesHead-ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7ADE22097EC290003C554 /* GlassesHead-ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E12C67312060777300531324 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E12C67152060777300531324 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E12C672E2060777300531324;
+			remoteInfo = "QuotePop WatchKit App";
+		};
+		E12C67402060777400531324 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E12C67152060777300531324 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E12C673D2060777400531324;
+			remoteInfo = "QuotePop WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E12C67522060777400531324 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E12C673F2060777400531324 /* QuotePop WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E12C67562060777400531324 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E12C67302060777300531324 /* QuotePop WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E12C671D2060777300531324 /* QuotePop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuotePop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E12C67202060777300531324 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E12C67252060777300531324 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E12C67272060777300531324 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E12C672A2060777300531324 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E12C672C2060777300531324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E12C672F2060777300531324 /* QuotePop WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QuotePop WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E12C67352060777400531324 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		E12C67372060777400531324 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E12C67392060777400531324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E12C673E2060777400531324 /* QuotePop WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "QuotePop WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E12C67432060777400531324 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		E12C67452060777400531324 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		E12C67472060777400531324 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		E12C67492060777400531324 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E12C674B2060777400531324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E12C674C2060777400531324 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		E12C675C206088A400531324 /* QuoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteModel.swift; sourceTree = "<group>"; };
+		E12C67602061CC2300531324 /* QuotesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesCollectionViewCell.swift; sourceTree = "<group>"; };
+		E12C67622062D6E700531324 /* AddNewQuote_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewQuote_ViewController.swift; sourceTree = "<group>"; };
+		E12C67642065972100531324 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		E12C6766206A702300531324 /* QuoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteModel.swift; sourceTree = "<group>"; };
+		E1813F8C208B76D3004A365B /* QuoteModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuoteModel.xcdatamodel; sourceTree = "<group>"; };
+		E1813F8E208B7CE3004A365B /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		E1813F90208B8CCE004A365B /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		E188F1C3207C27410045D7DC /* Chewy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chewy-Regular.ttf"; sourceTree = "<group>"; };
+		E188F1C6207C2BE70045D7DC /* Cloud-CollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cloud-CollectionViewLayout.swift"; sourceTree = "<group>"; };
+		E18BDC2D208D61E800A97876 /* ViewQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewQuoteViewController.swift; sourceTree = "<group>"; };
+		E18EF938207D7DB5005D2438 /* ViewController-CloudCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController-CloudCollection.swift"; sourceTree = "<group>"; };
+		E1AEF6B22093CD58007BAF85 /* Color-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Extension.swift"; sourceTree = "<group>"; };
+		E1AEF6DB20942B49007BAF85 /* GlassesHead-ViewController-Programmatically.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GlassesHead-ViewController-Programmatically.swift"; sourceTree = "<group>"; };
+		E1B2174B20843AE700B3FD30 /* CategoriesViewController-Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategoriesViewController-Table.swift"; sourceTree = "<group>"; };
+		E1B2174D20843DA200B3FD30 /* CloudTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudTableViewCell.swift; sourceTree = "<group>"; };
+		E1F7ADE22097EC290003C554 /* GlassesHead-ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GlassesHead-ViewController.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E12C671A2060777300531324 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E12C673B2060777400531324 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E12C67142060777300531324 = {
+			isa = PBXGroup;
+			children = (
+				E188F1C3207C27410045D7DC /* Chewy-Regular.ttf */,
+				E12C67642065972100531324 /* Connectivity.swift */,
+				E12C671F2060777300531324 /* QuotePop */,
+				E12C67332060777300531324 /* QuotePop WatchKit App */,
+				E12C67422060777400531324 /* QuotePop WatchKit Extension */,
+				E12C671E2060777300531324 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E12C671E2060777300531324 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E12C671D2060777300531324 /* QuotePop.app */,
+				E12C672F2060777300531324 /* QuotePop WatchKit App.app */,
+				E12C673E2060777400531324 /* QuotePop WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E12C671F2060777300531324 /* QuotePop */ = {
+			isa = PBXGroup;
+			children = (
+				E18BDC2C208D61BF00A97876 /* View Quote */,
+				E13D972D2083A86100092C62 /* Model */,
+				E13D972C2083A84400092C62 /* Collection View */,
+				E13D972B2083A81800092C62 /* Categories Table View */,
+				E13D972F2083A8A200092C62 /* Add New */,
+				E13D972E2083A87F00092C62 /* Supporting Files */,
+				E12C67242060777300531324 /* Main.storyboard */,
+			);
+			path = QuotePop;
+			sourceTree = "<group>";
+		};
+		E12C67332060777300531324 /* QuotePop WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				E12C67342060777400531324 /* Interface.storyboard */,
+				E12C67372060777400531324 /* Assets.xcassets */,
+				E12C67392060777400531324 /* Info.plist */,
+			);
+			path = "QuotePop WatchKit App";
+			sourceTree = "<group>";
+		};
+		E12C67422060777400531324 /* QuotePop WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E12C67432060777400531324 /* InterfaceController.swift */,
+				E12C6766206A702300531324 /* QuoteModel.swift */,
+				E12C67452060777400531324 /* ExtensionDelegate.swift */,
+				E12C67472060777400531324 /* NotificationController.swift */,
+				E12C67492060777400531324 /* Assets.xcassets */,
+				E12C674B2060777400531324 /* Info.plist */,
+				E12C674C2060777400531324 /* PushNotificationPayload.apns */,
+			);
+			path = "QuotePop WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		E13D972B2083A81800092C62 /* Categories Table View */ = {
+			isa = PBXGroup;
+			children = (
+				E1B2174B20843AE700B3FD30 /* CategoriesViewController-Table.swift */,
+				E1B2174D20843DA200B3FD30 /* CloudTableViewCell.swift */,
+			);
+			path = "Categories Table View";
+			sourceTree = "<group>";
+		};
+		E13D972C2083A84400092C62 /* Collection View */ = {
+			isa = PBXGroup;
+			children = (
+				E188F1C6207C2BE70045D7DC /* Cloud-CollectionViewLayout.swift */,
+				E12C67602061CC2300531324 /* QuotesCollectionViewCell.swift */,
+				E18EF938207D7DB5005D2438 /* ViewController-CloudCollection.swift */,
+			);
+			path = "Collection View";
+			sourceTree = "<group>";
+		};
+		E13D972D2083A86100092C62 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1813F8E208B7CE3004A365B /* Quote.swift */,
+				E1813F90208B8CCE004A365B /* Category.swift */,
+				E12C675C206088A400531324 /* QuoteModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E13D972E2083A87F00092C62 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E12C67272060777300531324 /* Assets.xcassets */,
+				E12C67292060777300531324 /* LaunchScreen.storyboard */,
+				E12C67202060777300531324 /* AppDelegate.swift */,
+				E1813F8B208B76D3004A365B /* QuoteModel.xcdatamodeld */,
+				E12C672C2060777300531324 /* Info.plist */,
+				E1AEF6B22093CD58007BAF85 /* Color-Extension.swift */,
+				E1AEF6DB20942B49007BAF85 /* GlassesHead-ViewController-Programmatically.swift */,
+				E1F7ADE22097EC290003C554 /* GlassesHead-ViewController.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E13D972F2083A8A200092C62 /* Add New */ = {
+			isa = PBXGroup;
+			children = (
+				E12C67622062D6E700531324 /* AddNewQuote_ViewController.swift */,
+			);
+			path = "Add New";
+			sourceTree = "<group>";
+		};
+		E18BDC2C208D61BF00A97876 /* View Quote */ = {
+			isa = PBXGroup;
+			children = (
+				E18BDC2D208D61E800A97876 /* ViewQuoteViewController.swift */,
+			);
+			path = "View Quote";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E12C671C2060777300531324 /* QuotePop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E12C67572060777400531324 /* Build configuration list for PBXNativeTarget "QuotePop" */;
+			buildPhases = (
+				E12C67192060777300531324 /* Sources */,
+				E12C671A2060777300531324 /* Frameworks */,
+				E12C671B2060777300531324 /* Resources */,
+				E12C67562060777400531324 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E12C67322060777300531324 /* PBXTargetDependency */,
+			);
+			name = QuotePop;
+			productName = QuotePop;
+			productReference = E12C671D2060777300531324 /* QuotePop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E12C672E2060777300531324 /* QuotePop WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E12C67532060777400531324 /* Build configuration list for PBXNativeTarget "QuotePop WatchKit App" */;
+			buildPhases = (
+				E12C672D2060777300531324 /* Resources */,
+				E12C67522060777400531324 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E12C67412060777400531324 /* PBXTargetDependency */,
+			);
+			name = "QuotePop WatchKit App";
+			productName = "QuotePop WatchKit App";
+			productReference = E12C672F2060777300531324 /* QuotePop WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		E12C673D2060777400531324 /* QuotePop WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E12C674F2060777400531324 /* Build configuration list for PBXNativeTarget "QuotePop WatchKit Extension" */;
+			buildPhases = (
+				E12C673A2060777400531324 /* Sources */,
+				E12C673B2060777400531324 /* Frameworks */,
+				E12C673C2060777400531324 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QuotePop WatchKit Extension";
+			productName = "QuotePop WatchKit Extension";
+			productReference = E12C673E2060777400531324 /* QuotePop WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E12C67152060777300531324 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Alec Charbonneau";
+				TargetAttributes = {
+					E12C671C2060777300531324 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					E12C672E2060777300531324 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					E12C673D2060777400531324 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E12C67182060777300531324 /* Build configuration list for PBXProject "QuotePop" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E12C67142060777300531324;
+			productRefGroup = E12C671E2060777300531324 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E12C671C2060777300531324 /* QuotePop */,
+				E12C672E2060777300531324 /* QuotePop WatchKit App */,
+				E12C673D2060777400531324 /* QuotePop WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E12C671B2060777300531324 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E188F1C4207C27410045D7DC /* Chewy-Regular.ttf in Resources */,
+				E12C672B2060777300531324 /* LaunchScreen.storyboard in Resources */,
+				E12C67282060777300531324 /* Assets.xcassets in Resources */,
+				E12C67262060777300531324 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E12C672D2060777300531324 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E188F1C5207C27860045D7DC /* Chewy-Regular.ttf in Resources */,
+				E12C67382060777400531324 /* Assets.xcassets in Resources */,
+				E12C67362060777400531324 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E12C673C2060777400531324 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E12C674A2060777400531324 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E12C67192060777300531324 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1AEF6DC20942B49007BAF85 /* GlassesHead-ViewController-Programmatically.swift in Sources */,
+				E188F1C7207C2BE70045D7DC /* Cloud-CollectionViewLayout.swift in Sources */,
+				E12C675D206088A400531324 /* QuoteModel.swift in Sources */,
+				E12C67212060777300531324 /* AppDelegate.swift in Sources */,
+				E12C67632062D6E700531324 /* AddNewQuote_ViewController.swift in Sources */,
+				E1B2174C20843AE700B3FD30 /* CategoriesViewController-Table.swift in Sources */,
+				E1F7ADE32097EC290003C554 /* GlassesHead-ViewController.swift in Sources */,
+				E1B2174E20843DA200B3FD30 /* CloudTableViewCell.swift in Sources */,
+				E1813F8D208B76D3004A365B /* QuoteModel.xcdatamodeld in Sources */,
+				E18EF939207D7DB5005D2438 /* ViewController-CloudCollection.swift in Sources */,
+				E12C67612061CC2300531324 /* QuotesCollectionViewCell.swift in Sources */,
+				E12C67652065972100531324 /* Connectivity.swift in Sources */,
+				E1813F8F208B7CE3004A365B /* Quote.swift in Sources */,
+				E1813F91208B8CCE004A365B /* Category.swift in Sources */,
+				E18BDC2E208D61E800A97876 /* ViewQuoteViewController.swift in Sources */,
+				E1AEF6B32093CD58007BAF85 /* Color-Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E12C673A2060777400531324 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E12C67482060777400531324 /* NotificationController.swift in Sources */,
+				E12C67462060777400531324 /* ExtensionDelegate.swift in Sources */,
+				E12C6767206A702300531324 /* QuoteModel.swift in Sources */,
+				E12C67442060777400531324 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E12C67322060777300531324 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E12C672E2060777300531324 /* QuotePop WatchKit App */;
+			targetProxy = E12C67312060777300531324 /* PBXContainerItemProxy */;
+		};
+		E12C67412060777400531324 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E12C673D2060777400531324 /* QuotePop WatchKit Extension */;
+			targetProxy = E12C67402060777400531324 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E12C67242060777300531324 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E12C67252060777300531324 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E12C67292060777300531324 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E12C672A2060777300531324 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E12C67342060777400531324 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E12C67352060777400531324 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E12C674D2060777400531324 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E12C674E2060777400531324 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E12C67502060777400531324 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SB9FYTC3GQ;
+				INFOPLIST_FILE = "QuotePop WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.QuotePop.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		E12C67512060777400531324 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SB9FYTC3GQ;
+				INFOPLIST_FILE = "QuotePop WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.QuotePop.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		E12C67542060777400531324 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-watch";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SB9FYTC3GQ;
+				IBSC_MODULE = QuotePop_WatchKit_Extension;
+				INFOPLIST_FILE = "QuotePop WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.QuotePop.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		E12C67552060777400531324 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-watch";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SB9FYTC3GQ;
+				IBSC_MODULE = QuotePop_WatchKit_Extension;
+				INFOPLIST_FILE = "QuotePop WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.QuotePop.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		E12C67582060777400531324 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-iOS";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SB9FYTC3GQ;
+				INFOPLIST_FILE = "$(SRCROOT)/QuotePop/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.QuotePop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E12C67592060777400531324 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-iOS";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SB9FYTC3GQ;
+				INFOPLIST_FILE = "$(SRCROOT)/QuotePop/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.QuotePop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E12C67182060777300531324 /* Build configuration list for PBXProject "QuotePop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E12C674D2060777400531324 /* Debug */,
+				E12C674E2060777400531324 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E12C674F2060777400531324 /* Build configuration list for PBXNativeTarget "QuotePop WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E12C67502060777400531324 /* Debug */,
+				E12C67512060777400531324 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E12C67532060777400531324 /* Build configuration list for PBXNativeTarget "QuotePop WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E12C67542060777400531324 /* Debug */,
+				E12C67552060777400531324 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E12C67572060777400531324 /* Build configuration list for PBXNativeTarget "QuotePop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E12C67582060777400531324 /* Debug */,
+				E12C67592060777400531324 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E1813F8B208B76D3004A365B /* QuoteModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E1813F8C208B76D3004A365B /* QuoteModel.xcdatamodel */,
+			);
+			currentVersion = E1813F8C208B76D3004A365B /* QuoteModel.xcdatamodel */;
+			path = QuoteModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E12C67152060777300531324 /* Project object */;
+}
